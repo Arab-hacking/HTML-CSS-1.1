@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Prosto+One&display=swap");
+
+@font-face {
+  font-family: "Darkline";
+  src: url("../fonts/Darkline.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DM Bold";
+  src: url("../fonts/DMSans-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DM Regular";
+  src: url("../fonts/DMSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BL DISPLAY";
+  src: url("../fonts/sequel-sans-black-display.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.logo {
+  font-family: "Darkline", sans-serif;
+  font-size: 42px;
+  text-decoration: none;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1440px;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+}
+
+.header-items {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+}
+
+.header-list a {
+  text-decoration: none;
+  color: #26262699;
+  font-family: "DM Regular", sans-serif;
+  font-size: 15px;
+  transition: color 0.2s ease;
+}
+
+.header-list.active a {
+  color: #262626;
+  font-family: "DM Bold", sans-serif;
+}
+
+.header-list a:hover {
+  color: #262626;
+  font-family: "DM Bold";
+}
+
+.header-search input[type="text"] {
+  left: 1205px;
+  width: 100px;
+  height: 35px;
+  color: #ffffff;
+  background-color: #b8c2ce;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  opacity: 1;
+  outline: none;
+  box-sizing: border-box;
+  text-align: center;
+}
+.header-search input[type="text"]::placeholder {
+  color: #ffffff !important;
+  opacity: 0.7;
+}
+
+.site-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 1440px;
+  margin: 0 auto;
+}
+.basketball {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 720px;
+  height: 580px;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  z-index: 2;
+}
+.main-text {
+  display: block;
+  white-space: pre-line;
+  font-family: "BL DISPLAY", sans-serif;
+  font-weight: 435;
+  font-size: 80px;
+  margin-top: 20px;
+  background: linear-gradient(#262626, #b8c2ce);
+  line-height: 75px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.news-right,
+.news-right-1 {
+  width: 270px;
+  height: 233px;
+  overflow: hidden;
+  justify-content: space-between;
+  border-radius: 6px;
+}
+.news-right img,
+.news-right-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  background: #f2f2f2;
+  background: linear-gradient(
+    0deg,
+    rgba(242, 242, 242, 1) 100%,
+    rgba(242, 242, 242, 1) 0%
+  );
+}
+.square {
+  display: flex;
+  width: 89px;
+  height: 34px;
+  background-color: #e1e8f0;
+  border-radius: 3px;
+  justify-content: center;
+  align-items: center;
+  font-family: "DM Medium", sans-serif;
+  font-size: 20px;
+  color: #b8c2ce;
+}
+.block-right {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 111px;
+}
+.down-center {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0px;
+  z-index: 1;
+}
+
+.line {
+  width: 100%;
+  text-align: center;
+}
+
+.site-main .down-center .line p {
+  margin: 0;
+  padding: 0;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+.button-container button {
+  width: 285px;
+  height: 62px;
+  background-color: #262626;
+  color: #e1e8f0;
+  border: none;
+  border-radius: 6px;
+  font-family: "DM Bold", sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+}
+body {
+  background: #f9fafc;
+  background: linear-gradient(
+    180deg,
+    rgba(249, 250, 252, 1) 100%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.Category {
+  margin-top: 80px;
+}
+
+.Category h1 {
+  font-family: "DM Regular", sans-serif;
+  font-weight: 415;
+  font-size: 28px;
+  text-align: left;
+  margin: 0 0 25px 0;
+}
+
+
+.Category ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px; 
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+}
+
+.FOOTBLALL-CATEGORY, .BASKETBALL-CATEGORY, .CARSPORT-CATEGORY, .TENNIS-CATEGORY {
+  display: flex;
+  flex-direction: column; 
+  width: 270px; 
+}
+
+.text-football, .text-basketball, .text-carsport, .text-tennis { 
+  display: flex; 
+  width: 270px; 
+  height: 116px; 
+  border-radius: 6px; 
+  justify-content: center; 
+  align-items: center; 
+  font-family: "BL Display", sans-serif; 
+  font-size: 37px; 
+  font-weight: bold; 
+  margin: 0;
+  
+
+  background-color: #EBEEF3; 
+  position: relative;
+  color: transparent;
+}
+
+
+.text-football::before, .text-basketball::before, .text-carsport::before, .text-tennis::before {
+  position: absolute;
+  font-weight: bold;
+  background-image: linear-gradient(to top, #B8C2CE, #262626);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.text-football::before {
+  content: "FOOTBALL";
+}
+
+
+.text-basketball::before {
+  content: "BASCKET\A BALL"; 
+  white-space: pre-wrap;
+  text-align: center;
+}
+.text-carsport::before {
+  content: "CAR SPORT";
+}
+.text-tennis::before {
+  content: "TABLE\A TENNIS"; 
+  white-space: pre-wrap;
+  text-align: center;
+}
+
+
+.img-wrapper {
+  position: relative;
+  width: 270px;
+  height: 288px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.img-football, .img-basketball, .img-carsport, .img-tennis {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.FOOTBALL-CATEGORY{
+  gap: 15px; 
+}
+.BASKETBALL-CATEGORY{
+  gap: 15px; 
+}
+.CARSPORT-CATEGORY{
+  gap: 15px;
+}
+.TENNIS-CATEGORY {
+  gap: 15px;
+}
